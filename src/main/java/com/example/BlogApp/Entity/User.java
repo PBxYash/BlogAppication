@@ -22,7 +22,7 @@ public class User {
     private String username;
     private String email;
     private String password;
-
+    private  String imagePath;
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinTable(name = "user_roles",
             joinColumns = @JoinColumn(name = "user_id", referencedColumnName
